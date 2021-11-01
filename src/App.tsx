@@ -11,7 +11,18 @@ function App() {
     {id: 1, name: 'Acordar 6 da manhã', done: true},
     {id: 2, name: 'Estudar react 8 AM', done: false}
 
-  ])
+  ]);
+
+  // função de adicionar tarefa na lista
+  const handleAddTask = (taskName: string) => {
+    let newList = [...list]
+    newList.push({
+      id: list.length + 1,
+      name: taskName,
+      done: false
+    });
+    setList(newList)
+  }
 
   return (
     <div>
@@ -20,7 +31,7 @@ function App() {
           <C.Header>Lista de tarefas</C.Header>
         
           {/* input da lista */}
-          <AddArea />
+          <AddArea onEnter={handleAddTask}/>
 
           {/* listar minha lista de tarefas */}
           {list.map((item, index) => (
