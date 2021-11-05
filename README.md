@@ -18,6 +18,8 @@
 <h2 align="center" id="tecnologias"> 🛠 Tecnologias </h2>
 
 :heavy_check_mark: React <br>
+:heavy_check_mark: TypeScript <br>
+:heavy_check_mark: Styled Components <br>
 
 <h2 align="center" id="autor"> Autora </h2>
 
