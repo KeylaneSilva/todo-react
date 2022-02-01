@@ -7,11 +7,7 @@ import { AddArea } from './components/AddArea'
 
 function App() {
 
-  const [list , setList] = useState<Item[]>([
-    {id: 1, name: 'Acordar 6 da manhã', done: true},
-    {id: 2, name: 'Estudar react 8 AM', done: false}
-
-  ]);
+  const [list , setList] = useState<Item[]>([]);
 
   // função de adicionar tarefa na lista
   const handleAddTask = (taskName: string) => {
